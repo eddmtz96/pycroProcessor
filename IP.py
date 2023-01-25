@@ -22,7 +22,7 @@ def adder(c,a,b):
     c,s[4] = full_adder_1b(c,a[3],b[3])
     c,s[5] = full_adder_1b(c,a[2],b[2])
     c,s[6] = full_adder_1b(c,a[1],b[1])
-    c,s[0] = full_adder_1b(c,a[0],b[0])
+    c,s[7] = full_adder_1b(c,a[0],b[0])
     s = s[::-1]
     c = "0x" + format(c, "02x")
     s = instr.bin2hex(s)
@@ -40,7 +40,7 @@ def sub(a,b):
     c,s[4] = full_adder_1b(c,a[3],b[3])
     c,s[5] = full_adder_1b(c,a[2],b[2])
     c,s[6] = full_adder_1b(c,a[1],b[1])
-    c,s[0] = full_adder_1b(c,a[0],b[0])
+    c,s[7] = full_adder_1b(c,a[0],b[0])
     s = s[::-1]
     c = "0x" + format(c, "02x")
     s = instr.bin2hex(s)
